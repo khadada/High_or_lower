@@ -12,17 +12,17 @@ from functions import *
 # ------------------------------------------------
 
 def game():
+    print(art.logo)
     score = 0
     possib_answer = ["a", "b"]
     task_in_level = 2
     while task_in_level > score:
         computer_selects = cpu_choices(game_data.data)
-        print(computer_selects) # to delete later
         print_compare(computer_selects,"a")
         print(art.vs)
         print_compare(computer_selects,"b")
         correct_answer = answer_checker(computer_selects).lower()
-        print(f"The correct answer is : {correct_answer}") # to delete later
+        print(f"pssssssssst The correct answer is : {correct_answer}") # to delete later just for testing
         is_correct_value = False
         while not is_correct_value:
             user_answer = input('Who has more followers? type [a] or [b]:  ').lower()
